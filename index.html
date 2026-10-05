@@ -2,30 +2,89 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - FlareLog</title>
-    <style>body{font-family:sans-serif;max-width:800px;margin:40px auto;line-height:1.6;padding:0 20px;color:#333;}</style>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            max-width: 820px;
+            margin: 40px auto;
+            line-height: 1.7;
+            padding: 0 24px;
+            color: #1f2937;
+            background-color: #fafaf9;
+        }
+        h1 { color: #1e1b4b; font-size: 28px; margin-bottom: 8px; }
+        h2 { color: #312e81; font-size: 20px; margin-top: 32px; border-bottom: 1px solid #e5e7eb; padding-bottom: 6px; }
+        p, li { font-size: 15px; color: #374151; }
+        .meta { color: #6b7280; font-size: 14px; margin-bottom: 24px; }
+        .notice-box {
+            background: #eef2ff;
+            border-left: 4px solid #4f46e5;
+            padding: 14px 18px;
+            border-radius: 4px;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
+
     <h1>Privacy Policy for FlareLog: Migraine Tracker</h1>
-    <p>Last updated: October 4, 2026</p>
-    <p>FlareLog ("we", "our") is designed as a privacy-first health tracking application.</p>
-    
-    <h2>1. Data We Collect & How It Is Used</h2>
+    <div class="meta">Effective Date: October 5, 2026 | Last Updated: October 5, 2026</div>
+
+    <div class="notice-box">
+        <strong>Privacy Summary:</strong> FlareLog is built on an offline-first architecture. Your symptom logs, pain levels, and personal health entries are stored locally on your device by default. Cloud synchronization is optional and enabled only if you choose to sign in. We do not sell your personal data or share health records with third-party advertisers.
+    </div>
+
+    <h2>1. Information We Collect</h2>
+    <p>We collect and process the following categories of data strictly to provide health tracking and pattern visualization:</p>
     <ul>
-        <li><strong>Health & Symptom Data:</strong> Headache frequency, pain intensity, duration, symptoms, and self-reported medication logs. This data is used solely to generate observational pattern charts and clinical reports for the user.</li>
-        <li><strong>Personal Information:</strong> If you choose to create an optional cloud account via Google Sign-In or Email, we store your email address and authentication identifier in Supabase to sync your records.</li>
+        <li><strong>Health & Symptom Data (Special Category Data):</strong> Headache episode duration, pain severity (0–10), anatomical pain locations, associated symptoms (photophobia, nausea, aura), self-reported medication intake, daily wellness metrics (sleep quality, perceived stress, hydration), and user-entered notes.</li>
+        <li><strong>Account Information (Optional):</strong> If you choose to enable cloud backup via Google Sign-In or Email, we collect your email address and unique authentication ID.</li>
+        <li><strong>Subscription Information:</strong> Purchase tokens and subscription status processed via Google Play In-App Billing for FlareLog Pro ($0.99/month). We do not collect or store your payment card numbers.</li>
     </ul>
 
-    <h2>2. Data Storage & Security</h2>
-    <p>Your records reside locally on your device in an offline database. When optional cloud sync is enabled, data in transit is encrypted using HTTPS/TLS. We do not sell or monetize personal health records, nor do we share them with third-party ad networks.</p>
+    <h2>2. Purpose & Legal Basis for Processing (GDPR Compliance)</h2>
+    <p>For users in the European Union (EU) and United Kingdom (UK), our processing of personal data rests on the following legal bases:</p>
+    <ul>
+        <li><strong>Explicit Consent (GDPR Art. 9(2)(a)):</strong> We process your health and symptom data only with your explicit consent, provided through in-app interactions when recording entries.</li>
+        <li><strong>Contractual Necessity:</strong> To deliver the service, generate clinical reports, and manage your active FlareLog Pro subscription.</li>
+    </ul>
 
-    <h2>3. Data Deletion</h2>
-    <p>You can delete all local and cloud data at any time inside the app via <em>Settings & Privacy &gt; Delete All Data</em>.</p>
+    <h2>3. Third-Party Service Providers</h2>
+    <p>We work with trusted third-party service providers who process data strictly under our instructions and in compliance with security standards:</p>
+    <ul>
+        <li><strong>Supabase (PostgreSQL & Auth):</strong> Provides encrypted cloud database storage and authentication services when cloud backup is enabled.</li>
+        <li><strong>Google Play Services:</strong> Manages authentication routing and subscription processing.</li>
+    </ul>
 
-    <h2>4. Medical Disclaimer</h2>
-    <p>FlareLog is not a medical device and does not provide diagnostic or therapeutic advice. Always seek professional care for severe or concerning symptoms.</p>
+    <h2>4. Data Storage, Security & Retention</h2>
+    <p>All network transmissions (such as cloud synchronization or account login) are secured using industry-standard TLS/HTTPS encryption. Records stored locally on your Android device are safeguarded within the app's sandboxed Room/SQLite database.</p>
+    <p>We retain your cloud-backed records only as long as your account remains active. If you use the app in offline mode, data persists on your device until you uninstall the app or clear app data.</p>
 
-    <h2>5. Contact Us</h2>
-    <p>For privacy inquiries: support@flarelog.app</p>
+    <h2>5. User Data Rights & Account Deletion</h2>
+    <p>You maintain full control over your personal data under EU GDPR, UK GDPR, and US State Privacy Laws (e.g., CCPA/CPRA):</p>
+    <ul>
+        <li><strong>Right to Export:</strong> You can export your complete health records at any time via <em>Settings > Export All Data (JSON)</em> or <em>Export Episodes (CSV)</em>.</li>
+        <li><strong>Right to Erasure (Deletion):</strong> You can permanently delete all local entries, daily check-ins, and cloud-synced records directly in the app by navigating to <em>Settings > Danger Zone > Delete All Local Data</em>.</li>
+        <li><strong>Account Deletion Requests:</strong> You may also request manual deletion of your cloud account and associated database rows by contacting <strong>support@flarelog.app</strong>.</li>
+    </ul>
+
+    <h2>6. Medical Disclaimer</h2>
+    <p>FlareLog is a self-monitoring tool and observational health journal. It is <strong>not a medical device</strong> and is not intended for medical diagnosis, clinical triage, dosage calculation, or emergency management. Always consult a qualified healthcare provider or emergency services for severe, sudden, or concerning symptoms.</p>
+
+    <h2>7. Children's Privacy</h2>
+    <p>FlareLog is not directed to children under the age of 13 (or under 16 in the European Union). We do not knowingly collect personal data from minors.</p>
+
+    <h2>8. Changes to This Privacy Policy</h2>
+    <p>We may update this policy periodically to reflect feature additions or regulatory requirements. Any updates will be posted at this URL with an updated revision date.</p>
+
+    <h2>9. Contact Us</h2>
+    <p>If you have questions regarding this Privacy Policy or your personal data rights, contact us at:</p>
+    <p><strong>Email:</strong> support@flarelog.app<br>
+    <strong>Developer:</strong> FlareLog Development Team<br>
+    <strong>Website:</strong> <a href="https://calsnapix.github.io/flarelog-privacy/">https://calsnapix.github.io/flarelog-privacy/</a></p>
+
 </body>
 </html>
